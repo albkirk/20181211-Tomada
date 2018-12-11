@@ -1,4 +1,4 @@
-/* 
+/*
  * * ESP8266 template with config web page
  * based on BVB_WebConfig_OTA_V7 from Andreas Spiess https://github.com/SensorsIot/Internet-of-Things-with-ESP8266
  * to do: create button on web page to setup AP or Client WiFi Mode
@@ -8,7 +8,7 @@
 // HARWARE & SOFTWARE Version
 #define BRANDName "AlBros_Team"                         // Hardware brand name
 #define MODELName "Plug_OLED"                           // Hardware model name
-#define SWVer "09.08"                                   // Major.Minor Software version (use String 01.00 - 99.99 format !)
+#define SWVer "01.01"                                   // Major.Minor Software version (use String 01.00 - 99.99 format !)
 
 // GPIO to Function Assignment
 //ADC_MODE(ADC_VCC);                                    // TO COMMENT IF  you will use the ADC
@@ -58,7 +58,7 @@ void config_defaults() {
     Serial.println("Setting config Default values");
 
     config.DeviceName = String("Tomada");                 // Device Name
-    config.Location = String("MainRoom");                 // Device Location
+    config.Location = String("Casa");                     // Device Location
     config.ClientID = String("001001");                   // Client ID (used on MQTT)
     config.ONTime = 60;                                   // 0-255 seconds (Byte range)
     config.SLEEPTime = 0;                                 // 0-255 minutes (Byte range)
